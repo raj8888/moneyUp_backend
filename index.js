@@ -2,7 +2,7 @@ const express = require("express");
 require('dotenv').config();
 const cors = require("cors");
 const { UserRouter } = require("./routes/Login_Sign_Up_Routes");
-const { connectDatabase() } = require("./config/db");
+const { connection } = require("./config/db");
 
 const {passport} = require("./config/google-outh");
 
